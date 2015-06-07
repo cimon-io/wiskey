@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
 
   s.authors                   = [ "Alexey Osipenko" ]
   s.email                     = [ "alexey@osipenko.in.ua" ]
-  s.homepage                  = "http://aratak.github.com/wiskey/"
+  s.homepage                  = "https://github.com/cimon-io/wiskey/"
   s.description = "The rails 3 gem, which include SCSS mixins and default rails templates for true-cutupping."
   s.version = Wiskey::VERSION
 
