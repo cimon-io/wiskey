@@ -3,10 +3,8 @@
   @if $clip == padding-box { $deprecated: padding; }
   @if $clip == border-box { $deprecated: border; }
 
-  @include experimental(background-clip, $deprecated,
-                        -moz, -webkit, not -o, not -ms, not -khtml, not official);
-  @include experimental(background-clip, $clip,
-    not -moz, not -webkit, -o, -ms, -khtml, official);
+  @include experimental(background-clip, $deprecated, moz webkit official);
+  @include experimental(background-clip, $clip, moz webkit official);
 }
 
 // @include background-clip(padding-box);

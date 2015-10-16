@@ -16,37 +16,37 @@
 
 // horizontal|vertical|inline-axis|block-axis|inherit
 @mixin box-orient($orient: inline-axis) {
-  @include mw-experimental(box-orient, $orient);
+  @include experimental(box-orient, $orient, moz webkit);
 }
 
 // start|end|center|justify
 @mixin box-pack($pack: start) {
-  @include mw-experimental(box-pack, $pack);
+  @include experimental(box-pack, $pack, moz webkit);
 }
 
 // start|end|center|baseline|stretch
 @mixin box-align($align: stretch) {
-  @include mw-experimental(box-align, $align);
+  @include experimental(box-align, $align, moz webkit);
 }
 
 // normal|reverse|inherit
 @mixin box-direction($direction: normal) {
-  @include mw-experimental(box-direction, $direction);
+  @include experimental(box-direction, $direction, moz webkit);
 }
 
 // single|multiple
 @mixin box-lines($lines: single) {
-  @include mw-experimental(box-lines, $lines);
+  @include experimental(box-lines, $lines, moz webkit);
 }
 
 @mixin box-ordinal-group($integer: 1) {
-  @include mw-experimental(box-ordinal-group, $integer);
+  @include experimental(box-ordinal-group, $integer, moz webkit);
 }
 
 @mixin box-flex($value: 0.0) {
-  @include mw-experimental(box-flex, $value);
+  @include experimental(box-flex, $value, moz webkit);
 }
 
 @mixin box-flex-group($integer: 1) {
-  @include mw-experimental(box-flex-group, $integer);
+  @include experimental(box-flex-group, $integer, moz webkit);
 }

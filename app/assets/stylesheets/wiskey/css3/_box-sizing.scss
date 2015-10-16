@@ -1,7 +1,6 @@
 @mixin box-sizing ($box) {
 //  content-box | border-box | inherit
-  @include experimental(box-sizing, $box,
-                        -moz, -webkit, -o, -ms, not -khtml, official)
+  @include experimental(box-sizing, $box, moz webkit o ms official)
 }
 
 // @include box-sizing(content-box);

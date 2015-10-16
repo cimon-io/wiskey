@@ -4,10 +4,8 @@
   @if $value == 'none' { $value-touch: 'none'; }
   @if $value == 'auto' { $value-touch: 'default'; }
 
-  @include experimental(touch-callout, $value-touch,
-                        -webkit, not -moz, not -o, not -ms, not -khtml, not official);
-  @include experimental(user-select, $value,
-                        -moz, -webkit, -o, not -ms, not -khtml, official);
+  @include experimental(touch-callout, $value-touch, webkit);
+  @include experimental(user-select, $value, moz webkit o official);
 }
 
 //  Usage: Gradient position and shape-size are required. Color stops are optional.
