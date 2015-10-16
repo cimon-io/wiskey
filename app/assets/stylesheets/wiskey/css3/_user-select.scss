@@ -1,8 +1,8 @@
 @mixin user-select($value) {
   // auto | none | text
 
-  @if $value == 'none' { $value-touch: 'none'; }
-  @if $value == 'auto' { $value-touch: 'default'; }
+  @if $value == none { $value-touch: 'none'; }
+  @if $value == auto { $value-touch: 'default'; }
 
   @include experimental(touch-callout, $value-touch, webkit);
   @include experimental(user-select, $value, moz webkit o official);
